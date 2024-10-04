@@ -37,7 +37,7 @@ class Vector2:
         return Vector2.Vector2(float("inf"), float("inf"))
     
     @staticmethod
-    def down():
+    def negative_infinity():
         return Vector2.Vector2(float("-inf"), float("-inf"))
 
     #CLASS FUNCTIONS
@@ -57,7 +57,7 @@ class Vector2:
     def normalize(vector):
         mag = Vector2.find_magnitude(vector.x, vector.y)
         return Vector2.Vector2(vector.x/mag, vector.y/mag)
-        
+    
     @staticmethod
     def find_magnitude(vector):
         return math.sqrt(vector.x**2 + vector.y**2)
